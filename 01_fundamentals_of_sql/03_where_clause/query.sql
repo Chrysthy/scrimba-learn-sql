@@ -13,5 +13,6 @@
 		where the condition equals 0
 */
 
-SELECT brand, model, condition, price FROM cars
-	WHERE condition = 0
+SELECT brand, model, condition, price 
+FROM cars
+WHERE condition = 0;
