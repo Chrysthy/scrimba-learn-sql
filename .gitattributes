@@ -1,1 +1,2 @@
 *.sql linguist-detectable=true
+# para todos os arquivos .sql, considere-os detectáveis pelo GitHub Linguist.
