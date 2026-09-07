@@ -23,3 +23,10 @@
 </p>
 
 <br>
+
+## 🛠 Technologies
+
+* SQL
+* Git e GitHub
+
+<br>
