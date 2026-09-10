@@ -22,10 +22,16 @@ SELECT brand, model, year FROM cars
 /*
 	Select the brand, model, condition and price from cars
         where the car is not sold
+        and the condition is not 5
 		order the table by condition in descending order
 		and by price in ascending order
 */
 
 SELECT brand, model, condition, price FROM cars
     WHERE sold IS FALSE
+    AND condition != 5
     ORDER BY condition DESC, price ASC; -- é o mesmo que: ORDER BY brand ASC ou somente price, porque ASC já é o padrão.
+
+
+-- Para "diferente de", use != ou <>.
+-- "IS NOT" é usado em casos como IS NOT TRUE ou IS NOT NULL.
