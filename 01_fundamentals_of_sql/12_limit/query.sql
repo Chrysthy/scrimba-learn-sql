@@ -20,7 +20,7 @@ SELECT brand, model, year, price FROM cars
 */
 
 SELECT brand, model, color, price FROM cars
-	WHERE color LIKE '%red%' AND
-	sold IS FALSE 
+	WHERE color LIKE '%red%' 
+	AND	sold IS FALSE 
 	ORDER BY price
-	LIMIT 5
+	LIMIT 5;
