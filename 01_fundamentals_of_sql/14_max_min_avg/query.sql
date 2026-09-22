@@ -26,3 +26,23 @@ SELECT FLOOR(AVG(price)) as average FROM cars
 
 -- FLOOR() Arredonda para baixo, para o menor número inteiro.
 -- CEILING() ou CEIL() Arredonda para cima, para o próximo número inteiro.
+
+
+
+
+
+-- MIN(): retorna o menor valor de uma coluna.
+
+/*
+	Select the average, minimum and maximum price from cars
+		where sold is true
+	Round the average up to the nearest whole number
+		and use 'avg' as the alias for that result	
+*/
+
+SELECT 
+    CEIL(AVG(price)) AS avg,
+    MIN(price),
+    MAX(price)
+FROM cars
+    WHERE sold IS TRUE;
