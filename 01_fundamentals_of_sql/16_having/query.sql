@@ -26,3 +26,50 @@ SELECT brand, count(brand), FLOOR(AVG(price)) AS AVG
 	WHERE sold IS FALSE
 	GROUP BY brand
 	HAVING count(brand) > 1;
+
+
+
+
+
+/*
+	Select:
+		* year
+		* a count of cars from that year, aliased as car_count
+		* the maximum price
+		* the minimum price
+	from the table cars
+		where the car has been sold
+	group by year
+		only show years where more than one car has been sold from that year
+	order the result by car_count
+*/
+
+
+SELECT year, 
+    COUNT(year) AS car_count,
+    MAX(price),
+    MIN(pirce)
+FROM cars
+WHERE sold IS TRUE
+GROUP BY year
+HAVING COUNT(year) > 1
+ORDER BY car_count;
+
+
+
+
+-- SELECT      → o que quero mostrar
+
+-- FROM        → de qual tabela
+
+-- WHERE       → quais carros quero antes de agrupar
+--               somente vendidos
+
+-- GROUP BY    → como quero criar os grupos
+--               por ano
+
+-- HAVING      → quais grupos quero manter
+--               somente anos com mais de 1 carro
+
+-- ORDER BY    → como organizar o resultado
+--               pela quantidade de carros
