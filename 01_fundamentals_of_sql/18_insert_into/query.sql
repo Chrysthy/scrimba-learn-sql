@@ -48,3 +48,8 @@ INSERT INTO cars (
 ), (
 	'Porsche', '944 Turbo', 1986, 48000, 'white', 4, FALSE
 );
+
+
+-- INSERT INTO não controla a ordem em que os registros aparecem quando você consulta a tabela.
+-- o banco não garante uma ordem específica. Os registros podem aparecer numa ordem diferente dependendo de como o banco está armazenando/lendo os dados.
+-- A ordem dos registros em uma tabela não é garantida. Para definir a ordem dos resultados, sempre use ORDER BY.
